@@ -13,8 +13,8 @@ Il modulo **Gestione Consumi Energetici** per **Odoo** è progettato per monitor
 - **Notifiche di Consumi Elevati**: Avvisa quando i consumi superano una soglia predefinita.
 
 ## Installazione
-
-### 1. Clona il repository
+### 1. Necessaria Installazione di numPy e sciKitLearn
+### 2. Clona il repository
 
 Per iniziare, clona il repository direttamente nel tuo ambiente Odoo:
 
