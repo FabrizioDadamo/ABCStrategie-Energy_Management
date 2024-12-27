@@ -14,6 +14,10 @@ Il modulo **Gestione Consumi Energetici** per **Odoo** è progettato per monitor
 
 ## Installazione
 ### 1. Necessaria Installazione di numPy e sciKitLearn
+
+```bash
+pip install numpy pandas scikit-learn
+
 ### 2. Clona il repository
 
 Per iniziare, clona il repository direttamente nel tuo ambiente Odoo:
