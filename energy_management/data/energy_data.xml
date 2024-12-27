@@ -1,0 +1,152 @@
+<odoo>
+    <record id="ir_cron_check_consumption" model="ir.cron">
+        <field name="name">Verifica Consumi Energetici</field>
+        <field name="model_id" ref="model_energy_consumption"/>
+        <field name="state">code</field>
+        <field name="code">model.check_high_consumption()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="active">True</field>
+    </record>
+
+    <record id="ir_cron_prediction_update" model="ir.cron">
+        <field name="name">Aggiornamento Previsioni Energetiche</field>
+        <field name="model_id" ref="model_energy_consumption"/>
+        <field name="state">code</field>
+        <field name="code">model._compute_prediction()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">hours</field> <!-- Frequenza dell'aggiornamento -->
+        <field name="active">True</field>
+    </record>
+
+
+
+
+     <!-- Linea 1 -->
+    <record id="energy_consumption_11" model="energy.consumption">
+        <field name="name">Linea 1</field>
+        <field name="energy_usage">110</field>
+        <field name="date">2024-01-10 08:00:00</field>
+        <field name="type">real</field>
+    </record>
+    <record id="energy_consumption_12" model="energy.consumption">
+        <field name="name">Linea 1</field>
+        <field name="energy_usage">120</field>
+        <field name="date">2024-01-11 08:00:00</field>
+        <field name="type">real</field>
+    </record>
+    <record id="energy_consumption_13" model="energy.consumption">
+        <field name="name">Linea 1</field>
+        <field name="energy_usage">115</field>
+        <field name="date">2024-01-12 08:00:00</field>
+        <field name="type">real</field>
+    </record>
+    <record id="energy_consumption_14" model="energy.consumption">
+        <field name="name">Linea 1</field>
+        <field name="energy_usage">125</field>
+        <field name="date">2024-01-13 08:00:00</field>
+        <field name="type">real</field>
+    </record>
+    <record id="energy_consumption_15" model="energy.consumption">
+        <field name="name">Linea 1</field>
+        <field name="energy_usage">118</field>
+        <field name="date">2024-01-14 08:00:00</field>
+        <field name="type">real</field>
+    </record>
+
+    <!-- Linea 2 -->
+    <record id="energy_consumption_21" model="energy.consumption">
+        <field name="name">Linea 2</field>
+        <field name="energy_usage">90</field>
+        <field name="date">2024-01-10 09:00:00</field>
+        <field name="type">real</field>
+    </record>
+    <record id="energy_consumption_22" model="energy.consumption">
+        <field name="name">Linea 2</field>
+        <field name="energy_usage">85</field>
+        <field name="date">2024-01-11 09:00:00</field>
+        <field name="type">real</field>
+    </record>
+    <record id="energy_consumption_23" model="energy.consumption">
+        <field name="name">Linea 2</field>
+        <field name="energy_usage">95</field>
+        <field name="date">2024-01-12 09:00:00</field>
+        <field name="type">real</field>
+    </record>
+    <record id="energy_consumption_24" model="energy.consumption">
+        <field name="name">Linea 2</field>
+        <field name="energy_usage">88</field>
+        <field name="date">2024-01-13 09:00:00</field>
+        <field name="type">real</field>
+    </record>
+    <record id="energy_consumption_25" model="energy.consumption">
+        <field name="name">Linea 2</field>
+        <field name="energy_usage">92</field>
+        <field name="date">2024-01-14 09:00:00</field>
+        <field name="type">real</field>
+    </record>
+
+    <!-- Linea 3 -->
+    <record id="energy_consumption_31" model="energy.consumption">
+        <field name="name">Linea 3</field>
+        <field name="energy_usage">140</field>
+        <field name="date">2024-01-10 10:30:00</field>
+        <field name="type">real</field>
+    </record>
+    <record id="energy_consumption_32" model="energy.consumption">
+        <field name="name">Linea 3</field>
+        <field name="energy_usage">145</field>
+        <field name="date">2024-01-11 10:30:00</field>
+        <field name="type">real</field>
+    </record>
+    <record id="energy_consumption_33" model="energy.consumption">
+        <field name="name">Linea 3</field>
+        <field name="energy_usage">135</field>
+        <field name="date">2024-01-12 10:30:00</field>
+        <field name="type">real</field>
+    </record>
+    <record id="energy_consumption_34" model="energy.consumption">
+        <field name="name">Linea 3</field>
+        <field name="energy_usage">138</field>
+        <field name="date">2024-01-13 10:30:00</field>
+        <field name="type">real</field>
+    </record>
+    <record id="energy_consumption_35" model="energy.consumption">
+        <field name="name">Linea 3</field>
+        <field name="energy_usage">142</field>
+        <field name="date">2024-01-14 10:30:00</field>
+        <field name="type">real</field>
+    </record>
+
+    <!-- Linea 4 -->
+    <record id="energy_consumption_41" model="energy.consumption">
+        <field name="name">Linea 4</field>
+        <field name="energy_usage">60</field>
+        <field name="date">2024-01-10 11:45:00</field>
+        <field name="type">real</field>
+    </record>
+    <record id="energy_consumption_42" model="energy.consumption">
+        <field name="name">Linea 4</field>
+        <field name="energy_usage">65</field>
+        <field name="date">2024-01-11 11:45:00</field>
+        <field name="type">real</field>
+    </record>
+    <record id="energy_consumption_43" model="energy.consumption">
+        <field name="name">Linea 4</field>
+        <field name="energy_usage">62</field>
+        <field name="date">2024-01-12 11:45:00</field>
+        <field name="type">real</field>
+    </record>
+    <record id="energy_consumption_44" model="energy.consumption">
+        <field name="name">Linea 4</field>
+        <field name="energy_usage">67</field>
+        <field name="date">2024-01-13 11:45:00</field>
+        <field name="type">real</field>
+    </record>
+    <record id="energy_consumption_45" model="energy.consumption">
+        <field name="name">Linea 4</field>
+        <field name="energy_usage">63</field>
+        <field name="date">2024-01-14 11:45:00</field>
+        <field name="type">real</field>
+    </record>
+</odoo>

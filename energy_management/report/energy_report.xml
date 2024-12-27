@@ -1,0 +1,12 @@
+<odoo>
+    <template id="report_energy_consumption">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <div>
+                    <h3>Consumi per <t t-esc="doc.name"/></h3>
+                    <p>Consumo Totale: <t t-esc="doc.total_consumption"/> kWh</p>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

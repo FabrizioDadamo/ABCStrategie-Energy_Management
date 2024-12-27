@@ -1,0 +1,6 @@
+<odoo>
+    <record id="model_energy_consumption" model="ir.model">
+        <field name="name">energy.consumption</field>
+        <field name="model">energy.consumption</field>
+    </record>
+</odoo>

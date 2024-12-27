@@ -1,0 +1,7 @@
+<odoo>
+    <record id="module_category_management" model="ir.module.category">
+        <field name="name">Management</field>
+        <field name="description">Moduli per la gestione e il management</field>
+        <field name="sequence">10</field>
+    </record>
+</odoo>
